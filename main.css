@@ -193,6 +193,10 @@ header {
     color: #fff;
 }
 
+#full-width-article:hover {
+    transform: scale(1.2);
+}
+
 #full-width-article-image {
     visibility: hidden;
     display: block;
@@ -223,7 +227,14 @@ header {
 }
 
 .half-width-article-image-wrapper {
+    width: 100%;
+    height: 240px;
     overflow: hidden;
+    transition: all 0.5s;
+}
+
+.half-width-article-image-wrapper:hover {
+    border-bottom: 5px solid #FFCC00;
 }
 
 .half-width-article-image {
@@ -234,8 +245,8 @@ header {
 }
 
 .half-width-article-image:hover {
-    transform: scale(1.2);
-    border-bottom: 5px solid #FFCC00;
+    transform: scale(1.1);
+
 }
 
 .full-width-article-text-wrapper {
@@ -251,6 +262,9 @@ header {
 }
 
 @media screen and (max-width: 1150px) {
+    html {
+        font-size: 14px;
+    }
     #large-articles-wrapper {
         float: none;
         display: block;
